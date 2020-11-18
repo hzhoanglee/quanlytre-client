@@ -6,97 +6,162 @@
 //create database connection
 include ('includes/db.php')
 ?>
-<!DOCTYPE html>
-<html lang="en">
+    <!DOCTYPE html>
+    <html>
+
     <head>
-        <meta charset="utf-8" />
-        <title>Login into Weelux.io Drive</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta content="Login into WeeLux.io Drive" name="description" />
-        <meta content="Weelux" name="author" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <!-- App favicon -->
-        <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- App css -->
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/app.min.css" rel="stylesheet" type="text/css" />
-
+        <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon.png">
+        <title>Đăng nhập vào hệ thống</title>
+        <link href="/dist/css/style.css" rel="stylesheet">
+        <!-- This page CSS -->
+        <link href="/dist/css/pages/authentication.css" rel="stylesheet">
+        <!-- This page CSS -->
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
     </head>
 
-    <body class="authentication-bg authentication-bg-pattern d-flex align-items-center">
-
-        <div class="home-btn d-none d-sm-block">
-            <a href="index.html"><i class="fas fa-home h2 text-white"></i></a>
+    <body>
+    <div class="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="loader__figure"></div>
+                <p class="loader__label">Material Admin</p>
+            </div>
         </div>
-        
-        <div class="account-pages w-100 mt-5 mb-5">
+        <!-- ============================================================== -->
+        <!-- Preloader - style you can find in spinners.css -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Login box.scss -->
+        <!-- ============================================================== -->
+        <div class="auth-wrapper d-flex no-block justify-content-center align-items-center" style="background:url(/assets/images/big/auth-bg2.jpg) no-repeat left center;">
             <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-md-8 col-lg-6 col-xl-5">
-                        <div class="card">
-
-                            <div class="card-body p-4">
-                                
-                                <div class="text-center mb-4">
-                                    <a href="/">
-                                        <span><img src="assets/images/logo-dark.png" alt="" height="28"></span>
-                                    </a>
+                <div class="row">
+                    <div class="col s12 l8 m6 demo-text">
+                        <span class="db"><img src="/assets/images/logo-icon.png" alt="logo" /></span>
+                        <span class="db"><img src="/assets/images/logo-text.png" alt="logo" /></span>
+                        <h1 class="font-light m-t-40">Welcome to the <span class="font-medium black-text">Material Admin</span></h1>
+                        <p>This is just a demo text which you can change as per your requeirment, so change once you get chance. this is default text.</p>
+                        <a class="btn btn-round red m-t-5">Know more</a>
+                    </div>
+                </div>
+                <div class="auth-box auth-sidebar">
+                    <div id="loginform">
+                        <div class="p-l-10">
+                            <h5 class="font-medium m-b-0 m-t-40">Sign In to Admin</h5>
+                            <small>Just login to your account</small>
+                        </div>
+                        <!-- Form -->
+                        <div class="row">
+                            <form class="col s12" method="post" name="login" action="test.php">
+                                <!-- email -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input name="username" id="username" type="text" required>
+                                        <input name="login" id="login" type="text" value="jhosadhoi" required>
+                                        <label for="username">Tên đăng nhập</label>
+                                    </div>
                                 </div>
-    <form action="" method="post" name="login" class="pt-2">
+                                <!-- pwd -->
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="password" type="password" class="validate" name="password" required>
+                                        <label for="password">Mật khẩu</label>
+                                    </div>
+                                </div>
+                                <!-- pwd -->
+                                <div class="row m-t-5"></div>
+                                <!-- pwd -->
+                                <div class="row m-t-40">
+                                    <div class="col s12">
+                                        <button class="btn-large w100 blue accent-4" type="submit">Login</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="center-align m-t-20 db">
+                            <a href="#" class="btn indigo darken-1 tooltipped m-r-5" data-position="top" data-tooltip="Login with Facebook"><i class="fab fa-facebook-f"></i></a> <a href="#" class="btn orange darken-4 tooltipped" data-position="top" data-tooltip="Login with Facebook"><i class="fab fa-google-plus-g"></i></a>
+                        </div>
+                        <div class="center-align m-t-20 db">
+                            Don't have an account? <a href="authentication-register2.html">Sign Up!</a>
+                        </div>
+                    </div>
+                    <!--<div id="recoverform">
+                        <div class="p-l-10">
+                            <h5 class="font-medium m-b-0 m-t-40">Recover password</h5>
+                            <small>Enter your Email and instructions will be sent to you!</small>
+                        </div>
+                        <div class="row">
 
-        <div class="form-group mb-3">
-            <label for="username">Email address</label>
-            <input class="form-control" type="username" id="username" name="username" required=""
-                   placeholder="Enter your username">
+                            <form class="col s12" method="post" action="index.html">
+
+                                <div class="row">
+                                    <div class="input-field col s12">
+                                        <input id="email1" type="email" class="validate" required>
+                                        <label for="email1">Email</label>
+                                    </div>
+                                </div>
+
+                                <div class="row m-t-20">
+                                    <div class="col s12">
+                                        <button class="btn-large w100 red" type="submit" name="action">Reset</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>-->
+                </div>
+            </div>
         </div>
-
-        <div class="form-group mb-3">
-            <a href="auth-recoverpassword.html" class="text-muted float-right"><small>Forgot your password?</small></a>
-            <label for="password">Password</label>
-            <input class="form-control" type="password" required="" name="password" id="password"
-                   placeholder="Enter your password">
-        </div>
-
-        <div class="custom-control custom-checkbox mb-3">
-            <input type="checkbox" class="custom-control-input" id="checkbox-signin" checked>
-            <label class="custom-control-label" for="checkbox-signin">Remember me</label>
-        </div>
-
-        <div class="form-group mb-0 text-center">
-            <button class="btn btn-success btn-block" type="submit" name="login"> Log In</button>
-        </div>
-
-    </form>
-
-    <div class="row mt-3">
-        <div class="col-12 text-center">
-            <p class="text-muted mb-0">Don't have an account? <a href="register.php" class="text-dark ml-1"><b>Sign
-                        Up</b></a></p>
-        </div> <!-- end col -->
+        <!-- ============================================================== -->
+        <!-- Login box.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper scss in scafholding.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper scss in scafholding.scss -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Right Sidebar -->
+        <!-- ============================================================== -->
     </div>
-    <!-- end row -->
+    <!-- ============================================================== -->
+    <!-- All Required js -->
+    <!-- ============================================================== -->
+    <script src="/assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="/dist/js/materialize.min.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script>
+        $('.tooltipped').tooltip();
+        // ==============================================================
+        // Login and Recover Password
+        // ==============================================================
+        $('#to-recover').on("click", function() {
+            $("#loginform").slideUp();
+            $("#recoverform").fadeIn();
+        });
+        $(function() {
+            $(".preloader").fadeOut();
+        });
+    </script>
+    </body>
 
-    </div> <!-- end card-body -->
-    </div>
-    <!-- end card -->
-
-    </div> <!-- end col -->
-    </div>
-    <!-- end row -->
-    </div>
-    <!-- end container -->
-</div>
-    <!-- end page -->
-
-    <!-- Vendor js -->
-    <script src="assets/js/vendor.min.js"></script>
-
-    <!-- App js -->
-    <script src="assets/js/app.min.js"></script>
-
-</body>
     </html>
     <!-- php quary section -->
     <?php
@@ -113,16 +178,12 @@ include ('includes/db.php')
         }
         if (($username == $row[1]) && ($password == $row[6])) //checking the username and password if right
         {
+            //Header("location:'https://hz319.com/'");
             $_SESSION['username'] = $username;
             echo "<script>window.location='/index.php';</script>";
         } else {
-            //Header("location:'https://google.com/'");
-            echo '<div class="alert alert-danger alert-dismissible bg-danger text-white border-0 fade show" role="alert">
-                                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                            <span aria-hidden="true">&times;</span>
-                                        </button>
-                                        Wrong Combination
-                                    </div>';
+            Header("location:'https://google.com/'");
+            //echo 'Error';
         }
 }
 ?>
