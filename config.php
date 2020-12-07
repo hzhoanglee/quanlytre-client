@@ -1,9 +1,9 @@
 <?php
 //Database
 $dbhost="127.0.0.1"; //hostname
-$dbuser="";  //mysql acc/ username
-$dbpass="";  //mysql scc/ password
-$dbname=""; //mysql database name
+$dbuser="qltre";  //mysql acc/ username
+$dbpass="qltre";  //mysql scc/ password
+$dbname="qltre"; //mysql database name
 
 
 //require('includes/db.php');
