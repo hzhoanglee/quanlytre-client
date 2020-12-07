@@ -1,0 +1,16 @@
+{
+    "Danger": {
+        "DoorOpen": 0,
+        "DoorPassed": 0,
+        "OutOfRange": 0,
+        "TempTooHigh": 0,
+        "TempTooLow": 0
+    },
+    "DeviceState": {
+        "Computer": 0,
+        "TV": 0
+    },
+    "Distance": "455.64",
+    "Humidity": "nan",
+    "Temperature": "nan"
+}

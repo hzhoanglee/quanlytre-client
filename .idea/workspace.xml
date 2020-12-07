@@ -2,7 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e39335bc-c37d-4ec9-ba79-2d39e08ec351" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/doorcheck.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/send.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/switch.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/variables.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dist/js/room.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/change-setting.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/includes/roominfo.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/room.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setting.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/checkdevice.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/checkdevice.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/checktemp.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/checktemp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config.php" beforeDir="false" afterPath="$PROJECT_DIR$/config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/getinfo.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/getinfo.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/includes/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/playground/data.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/playground/index.php" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,9 +74,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="PHP" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/includes" />
+      <recent name="$PROJECT_DIR$/dist/js" />
+      <recent name="$PROJECT_DIR$/backend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -73,6 +101,15 @@
       <workItem from="1605352766757" duration="2693000" />
       <workItem from="1605618325463" duration="619000" />
       <workItem from="1605713090486" duration="7215000" />
+      <workItem from="1605759167471" duration="7875000" />
+      <workItem from="1606032351628" duration="14140000" />
+      <workItem from="1606382436526" duration="598000" />
+      <workItem from="1606465300185" duration="14483000" />
+      <workItem from="1606589077516" duration="1952000" />
+      <workItem from="1606655213366" duration="2774000" />
+      <workItem from="1606930152407" duration="281000" />
+      <workItem from="1607216708798" duration="2395000" />
+      <workItem from="1607237296344" duration="221000" />
     </task>
     <servers />
   </component>
@@ -80,13 +117,30 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="911" y="451" key="NewPhpFileDialog" timestamp="1605722323328">
+    <state x="596" y="186" key="#SQL_Dialects" timestamp="1606052196292">
       <screen x="0" y="25" width="1920" height="997" />
     </state>
-    <state x="911" y="451" key="NewPhpFileDialog/0.25.1920.997@0.25.1920.997" timestamp="1605722323328" />
+    <state x="596" y="186" key="#SQL_Dialects/0.25.1920.997@0.25.1920.997" timestamp="1606052196292" />
+    <state x="596" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1606052200644">
+      <screen x="0" y="25" width="1920" height="997" />
+    </state>
+    <state x="596" y="186" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.25.1920.997@0.25.1920.997" timestamp="1606052200644" />
+    <state x="719" y="330" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1605769499231">
+      <screen x="0" y="25" width="1920" height="997" />
+    </state>
+    <state x="719" y="330" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.997@0.25.1920.997" timestamp="1605769499231" />
+    <state x="911" y="449" key="NewPhpFileDialog" timestamp="1606659260038">
+      <screen x="0" y="25" width="1920" height="993" />
+    </state>
+    <state x="911" y="449" key="NewPhpFileDialog/0.25.1920.993@0.25.1920.993" timestamp="1606659260038" />
+    <state x="911" y="451" key="NewPhpFileDialog/0.25.1920.997@0.25.1920.997" timestamp="1606048922528" />
     <state x="748" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1605721764852">
       <screen x="0" y="25" width="1920" height="997" />
     </state>
     <state x="748" y="142" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.25.1920.997@0.25.1920.997" timestamp="1605721764852" />
+    <state x="661" y="240" key="run.anything.popup" timestamp="1605765712599">
+      <screen x="0" y="25" width="1920" height="997" />
+    </state>
+    <state x="661" y="240" key="run.anything.popup/0.25.1920.997@0.25.1920.997" timestamp="1605765712599" />
   </component>
 </project>
