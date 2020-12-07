@@ -18,12 +18,13 @@
  - Display live information about distance of Sensor (For further handling)
  - Login System
  - Display Live Feed of Camera
- - ~~Setting system~~ *(Pending)*
+ - Setting system *(Pending)*
 
 
 ## Dependencies
 
 This web client is using JS and PHP, everything is included.
+Python dependencies for backend TV value update: firebase_admin. Install it by: `pip3 install firebase_admin`
 
 ## How to Install
 
