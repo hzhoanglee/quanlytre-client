@@ -270,7 +270,7 @@ $value = $_GET['value'];
         <!-- ============================================================== -->
         <!-- Container fluid scss in scafholding.scss -->
         <!-- ============================================================== -->
-        <footer class="center-align m-b-30">All Rights Reserved by Materialart. Designed and Developed by <a href="https://wrappixel.com">WrapPixel</a>.</footer>
+        <footer class="center-align m-b-30">All Rights Reserved by Hoang Le. Designed and Developed by <a href="https://hzv.io">HZV.io</a>.</footer>
     </div>
     <script src="assets/extra-libs/prism/prism.js"></script>
 <?php include('includes/footer.php');?>
