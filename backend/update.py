@@ -9,8 +9,9 @@ cred = credentials.Certificate('credentials.json')
 firebase_admin.initialize_app(cred, {
     'databaseURL': 'https://project-d478b.firebaseio.com/.json'
 })
+state = int(sys.argv[3])
 ref = db.reference(sys.argv[1])
 ref.update({
-    sys.argv[2]: sys.argv[3]
+    sys.argv[2]: state
 })
 print("Updated '", sys.argv[1], "/" , sys.argv[2], "' to '", sys.argv[3],"'")

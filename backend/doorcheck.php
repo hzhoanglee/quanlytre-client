@@ -24,7 +24,6 @@ while(1 == 1){
         echo ("Cua dang dong");
         sleep(1);
         $open = 0;
-        break;
     }
     if($door == 1){
         echo ("Cua dang mo");
@@ -32,9 +31,17 @@ while(1 == 1){
             $open = 1;
             if ($open == 1){
                 $send = curl_init();
-                curl_setopt($send, CURLOPT_URL, 'http://localhost/backend/send.php?title=C%E1%BA%A3nh%20b%C3%A1o!&message=C%E1%BB%ADa%20%C4%91%C6%B0%E1%BB%A3c%20m%E1%BB%9F%20ra');
+                curl_setopt($send, CURLOPT_URL, $config['site_url'] . 'http://vslim.io/backend/send.php?title=C%E1%BA%A3nh%20b%C3%A1o!&message=C%E1%BB%ADa%20%C4%91%C6%B0%E1%BB%A3c%20m%E1%BB%9F%20ra');
                 curl_exec($send);
                 curl_close($send);
+                $curtime = time();
+                echo $curtime;
+                $query = "INSERT INTO `logs` (`id`, `type`, `time`, `data`) VALUES (NULL, 'Door', " . $curtime . ", 'Door Opened');";
+                if ($db->query($query) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: "  . $db->error;
+                }
             }
         }
         elseif ($open == 1) {
@@ -45,7 +52,6 @@ while(1 == 1){
         echo ("Khong ai qua cua");
         sleep(1);
         $through = 0;
-        break;
     }
     if($pass == 1){
         echo ("Co nguoi qua cua");
@@ -53,9 +59,17 @@ while(1 == 1){
             $through = 1;
             if ($through == 1){
                 $send = curl_init();
-                curl_setopt($send, CURLOPT_URL, 'http://localhost/backend/send.php?title=C%E1%BA%A3nh%20b%C3%A1o!&message=C%C3%B3%20ng%C6%B0%E1%BB%9Di%20b%C6%B0%E1%BB%9Bc%20qua%20c%E1%BB%ADa');
+                curl_setopt($send, CURLOPT_URL, $config['site_url']  . 'http://vslim.io/backend/send.php?title=C%E1%BA%A3nh%20b%C3%A1o!&message=C%C3%B3%20ng%C6%B0%E1%BB%9Di%20b%C6%B0%E1%BB%9Bc%20qua%20c%E1%BB%ADa');
                 curl_exec($send);
                 curl_close($send);
+                $curtime = time();
+                echo $curtime;
+                $query = "INSERT INTO `logs` (`id`, `type`, `time`, `data`) VALUES (NULL, 'Door', " . $curtime . ", 'Door Closed');";
+                if ($db->query($query) === TRUE) {
+                    echo "New record created successfully";
+                } else {
+                    echo "Error: "  . $db->error;
+                }
             }
         }
         elseif ($through == 1) {
